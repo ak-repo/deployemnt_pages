@@ -1,0 +1,98 @@
+/* style.css */
+
+:root {
+    --primary-color: #007bff; /* A classic blue */
+    --secondary-color: #6c757d; /* A gray for subtle contrast */
+    --light-gray: #f8f9fa;   /* Very light gray for backgrounds */
+    --dark-gray: #343a40;    /* Darker gray for text and accents */
+    --white: #fff;          /* Pure white */
+    --font-family: 'Roboto', sans-serif; /* A modern font */
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray); /* Use the light gray */
+    color: var(--dark-gray);        /* Use the darker gray */
+    line-height: 1.6;
+}
+
+/* Container for better centering */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color); /* Use the primary blue */
+    color: var(--white);                 /* Use white for the header text */
+    padding: 1.5em 0;  /* Increase padding for more space */
+    text-align: center;
+    margin-bottom: 2em;  /* Add margin to separate from main content */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 500;  /* Slightly lighter font weight */
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;          /* Use flexbox for easy horizontal navigation */
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+    margin: 0 1.5em; /* Increase margin for spacing */
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500; /* Slightly bolder font weight for links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: var(--secondary-color); /* Change color on hover */
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 3em;
+    background-color: var(--white);  /* White background for sections */
+    padding: 2em;
+    border-radius: 8px;     /* Rounded corners for a modern look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+section h2 {
+    color: var(--primary-color); /* Use primary color for section titles */
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Style the unordered list */
+section ul {
+    list-style: disc;   /* Use discs instead of default bullets */
+    padding-left: 2em;  /* Add padding for the list items */
+}
+
+footer {
+    background-color: var(--dark-gray); /* Use the dark gray */
+    color: var(--white);                 /* White text for the footer */
+    text-align: center;
+    padding: 1em 0;
+    position: relative; /* Changed from fixed to relative */
+    bottom: 0;
+    width: 100%;
+    margin-top: 2em;  /* Add a top margin to separate from main content */
+}
